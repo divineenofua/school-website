@@ -1,23 +1,19 @@
 //JAVASCRIPT TOGGLE MENU---->
-var menuBar = document.getElementById("menuBar");
-function showMenu(){
-    menuBar.style.right = "0";
+var menu = document.querySelector('#menuBars');
+var navbar = document.querySelector('.navbar');
+
+menu.onclick = () =>{
+ menu.classList.toggle('fa-times')
+ navbar.classList.toggle('active')
 }
 
-function hideMenu(){
-    menuBar.style.right = "-2000px";
-}
-// slide-up script
-$('.scroll-up-btn').click(function(){
-    $('html').animate({scrollTop: 0});
-});
 
 $(document).ready(function(){
     $(window).scroll(function(){
          if(this.scrollY > 20){
-              $('.navbar').addClass("sticky");
+              $('.navBar').addClass("sticky");
          }else{
-               $('.navbar').removeClass("sticky");
+               $('.navBar').removeClass("sticky");
         }
         if(this.scrollY > 500){
             $('.scroll-up-btn').addClass("show");
@@ -26,4 +22,3 @@ $(document).ready(function(){
         }
     });
 });
-
