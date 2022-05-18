@@ -1,4 +1,4 @@
-//JAVASCRIPT TOGGLE MENU---->
+// JAVASCRIPT TOGGLE MENU---->
 var menu = document.querySelector('#menuBars');
 var navbar = document.querySelector('.navbar');
 
